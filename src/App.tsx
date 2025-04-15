@@ -3,58 +3,63 @@ import { useEffect, useState } from "react";
 
 import './theme/global.css';
 import { Header } from "./components/header/header";
-import { CardPersonagem } from "./components/cards/cards";
+import { CardVeiculo } from "./components/cards/cards";
 
-interface Personagem {
-  id: number;
-  name: string;
-  status: string;
-  species: string;
-  image: string;
-  location: { name: string };
+interface Veiculo {
+  tipo: string;
+  fabricante: string;
+  modelo: string;
+  cor: string;
+  carroceria: string;
+  uso: string;
+  combustivel: string;
+}
+
+interface Imagem {
+  arquivo: string;
+  angulo: string;
+  descricao: string;
+}
+
+interface VeiculoCompleto {
+  veiculo: Veiculo;
+  imagens: Imagem[];
 }
 
 function App() {
-  const [listarPersonagem, setListarPersonagem] = useState<Personagem[]>([]);
-  const [pesquisaPersonagem, setPesquisapersonagem] = useState("");
-
-  async function carregarPagina() {
-    const { data } = await axios.get("https://rickandmortyapi.com/api/character");
-    setListarPersonagem(data.results);
-  }
-
-  async function filtrar() {
-    try {
-      const { data } = await axios.get(`https://rickandmortyapi.com/api/character/?name=${pesquisaPersonagem}`);
-      setListarPersonagem(data.results);
-    } catch {
-      setListarPersonagem([]);
-    }
-  }
+  const [veiculos, setVeiculos] = useState<VeiculoCompleto[]>([]);
 
   useEffect(() => {
-    carregarPagina();
+    async function carregarDados() {
+      try {
+        const { data } = await axios.get("/db.json");
+        setVeiculos(data.veiculos);
+      } catch (error) {
+        console.error("Erro ao carregar db.json:", error);
+      }
+    }
+
+    carregarDados();
   }, []);
-
-  useEffect(() => {
-    if (pesquisaPersonagem.trim() !== "") {
-      filtrar();
-    } else {
-      carregarPagina();
-    }
-  }, [pesquisaPersonagem]);
 
   return (
     <>
-      <Header onSearch={setPesquisapersonagem} />
+      <Header onSearch={() => {}} />
       <section className="container">
-        {listarPersonagem.length > 0 ? (
-          listarPersonagem.map((personagem) => (
-            <CardPersonagem key={personagem.id} personagem={personagem} />
+      {veiculos.length > 0 ? (
+        veiculos
+          .filter((item) => Array.isArray(item.imagens) && item.imagens.length > 0)
+          .map((item, index) => (
+            <CardVeiculo
+              key={index}
+              veiculo={item.veiculo}
+              imagem={item.imagens[0]}
+            />
           ))
-        ) : (
-          <p>Nenhum personagem encontrado.</p>
-        )}
+      ) : (
+        <p>Nenhum veículo encontrado.</p>
+      )}
+
       </section>
     </>
   );

@@ -1,27 +1,42 @@
 import React from 'react';
 import styles from './CardPersonagem.module.css';
 
-interface CardPersonagemProps {
-  personagem: {
-    id: number;
-    name: string;
-    status: string;
-    species: string;
-    image: string;
-    location: { name: string };
-  };
+interface Veiculo {
+  tipo: string;
+  fabricante: string;
+  modelo: string;
+  cor: string;
+  uso: string;
+  carroceria: string;
+  combustivel: string;
 }
 
-export const CardPersonagem: React.FC<CardPersonagemProps> = ({ personagem }) => {
+interface Imagem {
+  arquivo: string;
+  angulo: string;
+  descricao: string;
+}
+
+interface CardVeiculoProps {
+  veiculo?: Veiculo;
+  imagem?: Imagem;
+}
+
+export const CardVeiculo: React.FC<CardVeiculoProps> = ({ veiculo, imagem }) => {
+  if (!veiculo || !imagem) return null; // <- 🔒 proteção contra undefined
+
   return (
     <div className={styles.card}>
-      <img className={styles.foto} src={personagem.image} alt={`Foto de ${personagem.name}`} />
-      <h2>Nome: {personagem.name}</h2>
-      <p>Espécie: {personagem.species}</p>
-      <p>Status: {personagem.status}</p>
-      <p>Localização: {personagem.location.name}</p>
+      <img
+        className={styles.foto}
+        src={`/images/${imagem.arquivo}`}
+        alt={imagem.descricao}
+      />
+      <h2>{veiculo.fabricante} - {veiculo.modelo}</h2>
+      <p><strong>Tipo:</strong> {veiculo.tipo}</p>
+      <p><strong>Carroceria:</strong> {veiculo.carroceria}</p>
+      <p><strong>Uso:</strong> {veiculo.uso}</p>
+      <p><strong>Combustível:</strong> {veiculo.combustivel}</p>
     </div>
   );
 };
-
-

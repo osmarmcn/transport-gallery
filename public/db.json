@@ -1,0 +1,660 @@
+{
+    "veiculos": [
+      {
+        "veiculo": {
+          "tipo": "Caminhão",
+          "fabricante": "Mercedes-Benz",
+          "modelo": "710 Plus",
+          "cor": "Vermelho",
+          "ano": null,
+          "carroceria": "Plataforma",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 2,
+          "numero_de_rodas": 6,
+          "uso": "Transporte de carga leve/média",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "Ocultada nas imagens",
+          "detalhes_visuais": [
+            "Faróis quadrados",
+            "Parachoque integrado à carroceria",
+            "Retrovisores grandes pretos",
+            "Adesivo 'Plus' com gráfico curvo",
+            "Inscrição '710' nas laterais frontais",
+            "Grades frontais pretas com símbolo da Mercedes-Benz cromado"
+          ]
+        },
+        "imagens": [
+          {
+            "arquivo": "caminhao-A-1.jpeg",
+            "angulo": "Frontal",
+            "descricao": "Visão frontal do caminhão mostrando o capô, faróis, grade e símbolo da Mercedes-Benz"
+          },
+          {
+            "arquivo": "caminhao-A-2.jpeg",
+            "angulo": "Frontal lateral esquerda",
+            "descricao": "Visão lateral frontal mostrando detalhes do adesivo, espelho retrovisor e carroceria"
+          },
+          {
+            "arquivo": "caminhao-A-3.jpeg",
+            "angulo": "Frontal lateral direita",
+            "descricao": "Visão lateral do lado do passageiro com destaque para o adesivo, tachógrafo e caçamba"
+          },
+          {
+            "arquivo": "caminhao-A-4.jpeg",
+            "angulo": "Frontal lateral esquerda",
+            "descricao": "Visão lateral frontal mostrando detalhes do adesivo, espelho retrovisor e carroceria"
+          },
+          {
+            "arquivo": "caminhao-A-5.jpeg",
+            "angulo": "Frontal",
+            "descricao": "Visão frontal do caminhão mostrando o capô, faróis, grade e símbolo da Mercedes-Benz"
+          },
+          {
+            "arquivo": "caminhao-A-6.jpeg",
+            "angulo": "Traseiro lado direito",
+            "descricao": "Visão traseira do caminhão mostrando o caçamba, faróis"
+          },
+          {
+            "arquivo": "caminhao-A-7.jpeg",
+            "angulo": "Traseiro lado esquerdo",
+            "descricao": "Visão traseira do caminhão mostrando o caçamba, faróis"
+          }
+        ],
+        "tags": [
+          "caminhão Mercedes",
+          "Mercedes-Benz 710",
+          "Mercedes vermelho",
+          "caminhão plataforma",
+          "710 Plus",
+          "caminhão de carga",
+          "caminhão antigo",
+          "caminhão leve",
+          "caminhão diesel",
+          "tacógrafo aferido"
+        ]
+      },
+      {
+        "veiculo": {
+          "tipo": "Caminhão",
+          "fabricante": "Mercedes-Benz",
+          "modelo": "L-Series",
+          "cor": "Branco",
+          "ano": null,
+          "carroceria": "Caçamba basculante",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 3,
+          "numero_de_rodas": 10,
+          "uso": "Transporte de carga pesada",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "Ocultada nas imagens",
+          "detalhes_visuais": [
+            "Cabine frontal quadrada",
+            "Grade dianteira com emblema Mercedes-Benz",
+            "Faróis redondos duplos",
+            "Para-choque frontal branco",
+            "Caçamba basculante branca",
+            "Eixo traseiro duplo (truck)",
+            "Ar-condicionado de teto"
+          ]
+        },
+        "imagens": [
+          {
+            "arquivo": "caminhao-B-1.jpeg",
+            "angulo": "Frontal diagonal",
+            "descricao": "Visão frontal diagonal do caminhão branco com caçamba estacionado em área aberta"
+          },
+          {
+            "arquivo": "caminhao-B-2.jpeg",
+            "angulo": "Frontal diagonal",
+            "descricao": "Visão mais próxima frontal diagonal do caminhão mostrando detalhes da cabine e grade"
+          }
+        ],
+        "tags": [
+          "caminhão Mercedes",
+          "Mercedes-Benz L-Series",
+          "caminhão branco",
+          "caçamba basculante",
+          "caminhão truck",
+          "caminhão de carga pesada",
+          "caminhão diesel",
+          "caminhão basculante"
+        ]
+      },
+      {
+        "veiculo": {
+          "tipo": "Caminhão",
+          "fabricante": "Não identificado",
+          "modelo": "Caminhão-tanque",
+          "cor": "Vermelho",
+          "ano": null,
+          "carroceria": "Tanque",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 2,
+          "numero_de_rodas": 6,
+          "uso": "Transporte de líquidos",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "Parcialmente visível nas imagens",
+          "detalhes_visuais": [
+            "Tanque cilíndrico vermelho",
+            "Escada de acesso ao topo do tanque",
+            "Chassi com longarina azul",
+            "Cabine vermelha",
+            "Engate para reboque",
+            "Interior da cabine com acabamento cinza",
+            "Bateria exposta próxima ao chassi"
+          ]
+        },
+        "imagens": [
+          {
+            "arquivo": "caminhao-C-1.jpeg",
+            "angulo": "Traseira diagonal",
+            "descricao": "Visão traseira diagonal do caminhão-tanque vermelho estacionado em área aberta com árvores ao fundo"
+          },
+          {
+            "arquivo": "caminhao-C-2.jpeg",
+            "angulo": "Detalhe do engate",
+            "descricao": "Close do engate traseiro e estrutura de chassi com longarina azul"
+          },
+          {
+            "arquivo": "caminhao-C-3.jpeg",
+            "angulo": "Lateral com porta aberta",
+            "descricao": "Visão lateral mostrando a porta do motorista aberta e detalhe da bateria no chassi"
+          }
+        ],
+        "tags": [
+          "caminhão-tanque",
+          "caminhão pipa",
+          "tanque vermelho",
+          "transporte de líquidos",
+          "caminhão de água",
+          "caminhão para combustível",
+          "caminhão diesel",
+          "caminhão vermelho"
+        ]
+      },
+      {
+        "veiculo":{
+            
+                "tipo": "Caminhão",
+                "fabricante": "Mercedes-Benz",
+                "modelo": "Accelo (possivelmente 915C)",
+                "cor": "Azul",
+                "ano": null,
+                "uso": "Transporte de cargas",
+                "combustivel": "Diesel",
+                "numero_de_rodas": 6,
+                "placa": "HXP3J74",
+                "detalhes_visuais": [
+                  "Frente plana com grade horizontal",
+                  "Símbolo central da Mercedes-Benz parcialmente coberto",
+                  "Faróis redondos integrados ao para-choque",
+                  "Para-choque azul da mesma cor da cabine",
+                  "Adesivo no para-brisa com a palavra 'PACOTE'",
+                  "Parado próximo a muro e sob uma árvore"
+                ]
+              },
+
+              "imagens": [
+                {
+                    "arquivo": "caminhao-D-1.jpeg"
+                },
+                {
+                    "arquivo": "caminhao-D-2.jpeg"
+                },
+                {
+                    "arquivo": "caminhao-D-3.jpeg"
+                }
+            ],
+                "tags": [
+                    "caminhão Mercedes",
+                    "Accelo",
+                    "Mercedes-Benz azul",
+                    "caminhão de carga",
+                    "caminhão diesel",
+                    "placa HXP3J74",
+                    "caminhão leve"
+                ]
+               
+        },
+        {
+          "veiculo": {
+            
+                "tipo": "Caminhão",
+                "fabricante": "Volkswagen",
+                "modelo": "Worker (possivelmente 17.220)",
+                "cor": "Branco com equipamento traseiro vermelho",
+                "ano": null,
+                "uso": "Coleta de lixo",
+                "combustivel": "Diesel",
+                "numero_de_rodas": 6,
+                "placa": null,
+                "detalhes_visuais": [
+                  "Cabine branca com formato quadrado",
+                  "Carroceria compactadora de lixo branca e vermelha",
+                  "Equipamento hidráulico exposto na traseira",
+                  "Para-lamas e rodas traseiras com desgaste visível",
+                  "Estacionado em local coberto ao lado de tambores"
+                ]
+              },
+
+              "imagens": [
+                {
+                    "arquivo": "caminhao-E-1.jpeg"
+                }
+               
+              ],
+                "tags": [
+                    "caminhão Volkswagen",
+                    "Worker",
+                    "caminhão de lixo",
+                    "compactador de lixo",
+                    "caminhão branco",
+                    "caminhão diesel",
+                    "caminhão de coleta",
+                    "caminhão de resíduos"
+                ]
+        },
+      {
+        "veiculo": {
+          "tipo": "Ônibus",
+          "fabricante": "Marcopolo",
+          "modelo": "Torino",
+          "cor": "Turquesa e branco",
+          "ano": null,
+          "carroceria": "Urbano",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 2,
+          "numero_de_rodas": 6,
+          "uso": "Transporte coletivo urbano",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "HJF-4518",
+          "detalhes_visuais": [
+            "Frente em formato arredondado",
+            "Faróis triplos em cada lado",
+            "Painel digital de itinerário na parte superior do para-brisa",
+            "Símbolo de acessibilidade para cadeirantes no para-brisa",
+            "Logo circular na grade dianteira",
+            "Cor predominante turquesa com faixa branca",
+            "Limpadores de para-brisa visíveis",
+            "Bancos amarelos em plástico rígido"
+          ]
+        },
+        "imagens": [
+          {
+            "arquivo": "onibus-A-1.jpeg",
+            "angulo": "Lateral frontal",
+            "descricao": "Visão lateral frontal do ônibus mostrando o design da frente e janelas laterais"
+          },
+          {
+            "arquivo": "onibus-A-2.jpeg",
+            "angulo": "Frontal",
+            "descricao": "Visão frontal completa mostrando grade, faróis e símbolo de acessibilidade"
+          },
+          {
+            "arquivo": "onibus-A-3.jpeg",
+            "angulo": "Interior",
+            "descricao": "Visão do interior do ônibus mostrando bancos amarelos, corrimãos e estrutura interna"
+          },
+          {
+            "arquivo": "onibus-A-4.jpeg",
+            "angulo": "Interior",
+            "descricao": "Visão do interior do ônibus mostrando a direção, acentendo do motorista e painel de controle"
+          },
+          {
+            "arquivo": "onibus-A-5.jpeg",
+            "angulo": "Interior",
+            "descricao": "Visão da porta aberta para acessar o veiculo"
+          },
+          {
+            "arquivo": "onibus-A-6.jpeg",
+            "angulo": "Externo lateral",
+            "descricao": "Visão da porta aberta para acessar o veiculo para pessoas com deficiência"
+          },
+          {
+            "arquivo": "onibus-A-7.jpeg"
+          },
+          {
+            "arquivo": "onibus-A-8.jpeg",
+            "angulo": "Lateral traseira",
+            "descricao": "Visão lateral traseira do ônibus mostrando a parte traseira e janelas laterais"
+          },
+
+          {
+            "arquivo": "onibus-A-9.jpeg"
+           
+          }
+        ],
+        "tags": [
+          "ônibus urbano",
+          "Marcopolo Torino",
+          "ônibus turquesa",
+          "transporte coletivo",
+          "ônibus de linha",
+          "ônibus acessível",
+          "ônibus diesel",
+          "bancos amarelos"
+        ]
+      },
+      {
+        "veiculo": {
+          "tipo": "Ônibus",
+          "fabricante": "Marcopolo",
+          "modelo": "Torino",
+          "cor": "Vermelho e branco",
+          "ano": null,
+          "carroceria": "Urbano",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 2,
+          "numero_de_rodas": 6,
+          "uso": "Transporte coletivo urbano",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "HJF-4518",
+          "detalhes_visuais": [
+            "Frente em formato arredondado",
+            "Faróis triplos em cada lado",
+            "Painel digital de itinerário na parte superior do para-brisa",
+            "Símbolo de acessibilidade para cadeirantes no para-brisa",
+            "Logo circular na grade dianteira",
+            "Cor predominante turquesa com faixa branca",
+            "Limpadores de para-brisa visíveis",
+            "Bancos amarelos em plástico rígido"
+          ]
+        },
+        "imagens": [
+            {
+                "arquivo": "onibus-B-1.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-2.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-3.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-4.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-5.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-6.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-7.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-8.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-9.jpeg"
+            }
+        ]
+        },
+        {
+        "veiculo": {
+          "tipo": "Ônibus",
+          "fabricante": "Marcopolo",
+          "modelo": "Torino",
+          "cor": "Vermelho e branco",
+          "ano": null,
+          "carroceria": "Urbano",
+          "quantidade_de_portas": 2,
+          "quantidade_de_eixos": 2,
+          "numero_de_rodas": 6,
+          "uso": "Transporte coletivo urbano",
+          "combustivel": "Diesel",
+          "tachografo": true,
+          "placa": "HJF-4518",
+          "detalhes_visuais": [
+            "Frente em formato arredondado",
+            "Faróis triplos em cada lado",
+            "Painel digital de itinerário na parte superior do para-brisa",
+            "Símbolo de acessibilidade para cadeirantes no para-brisa",
+            "Logo circular na grade dianteira",
+            "Cor predominante turquesa com faixa branca",
+            "Limpadores de para-brisa visíveis",
+            "Bancos amarelos em plástico rígido"
+          ]
+        },
+        "imagens": [
+            {
+                "arquivo": "onibus-B-1.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-2.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-3.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-4.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-5.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-6.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-7.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-8.jpeg"
+            },
+            {
+                "arquivo": "onibus-B-9.jpeg"
+            }
+        ]
+        },
+        {
+            "veiculo": {
+                "tipo": "Ônibus",
+                "fabricante": "Marcopolo",
+                "modelo": "Torino",
+                "cor": "Vermelho e branco",
+                "ano": null,
+                "carroceria": "Urbano",
+                "quantidade_de_portas": 2,
+                "quantidade_de_eixos": 2,
+                "numero_de_rodas": 6,
+                "uso": "Transporte coletivo urbano",
+                "combustivel": "Diesel",
+                "tachografo": true,
+                "placa": "HJF-4518",
+                "detalhes_visuais": [
+                  "Frente em formato arredondado",
+                  "Faróis triplos em cada lado",
+                  "Painel digital de itinerário na parte superior do para-brisa",
+                  "Símbolo de acessibilidade para cadeirantes no para-brisa",
+                  "Logo circular na grade dianteira",
+                  "Cor predominante turquesa com faixa branca",
+                  "Limpadores de para-brisa visíveis",
+                  "Bancos amarelos em plástico rígido"
+                ]
+              },
+            "imagens": [
+                {
+                    "arquivo": "onibus-C-1.jpeg"
+                },
+                {
+                    "arquivo": "onibus-C-2.jpeg"
+                },
+                {
+                    "arquivo": "onibus-C-3.jpeg"
+                }
+            ]
+        },
+        {
+            "veiculo": {
+                "tipo": "Ônibus",
+                "fabricante": "Marcopolo",
+                "modelo": "Torino",
+                "cor": "Branco",
+                "ano": null,
+                "carroceria": "Urbano",
+                "quantidade_de_portas": 2,
+                "quantidade_de_eixos": 2,
+                "numero_de_rodas": 6,
+                "uso": "Transporte coletivo viagem",
+                "combustivel": "Diesel",
+                "tachografo": true,
+                "placa": "NSQ-9323",
+                "detalhes_visuais": [
+                  "Frente em formato arredondado",
+                  "Faróis triplos em cada lado",
+                  "Logo circular na grade dianteira",
+                  "Limpadores de para-brisa visíveis"
+                  
+                ]
+              },
+            "imagens": [
+                {
+                    "arquivo": "onibus-D-1.jpeg"
+                }
+            ]
+        },
+        {
+            "tipo": "Retroescavadeira",
+            "fabricante": "CASE",
+            "modelo": "580N",
+            "cor": "Amarelo e Preto",
+            "ano": null,
+            "uso": "Terraplenagem, construção civil, escavação",
+            "combustivel": "Diesel",
+            "cabine_fechada": true,
+            "numero_de_rodas": 4,
+            "detalhes_visuais": [
+              "Pá carregadeira frontal",
+              "Braço de escavação traseiro (não visível na imagem)",
+              "Cabine envidraçada",
+              "Luzes de advertência no teto",
+              "Pintura amarela com marca CASE em branco"
+            ],
+            "imagens": [
+              {
+                "arquivo": "trator-A-1.jpeg",
+                "angulo": "Frontal lateral esquerda",
+                "descricao": "Retroescavadeira CASE 580N vista de frente com detalhe na pá carregadeira e cabine fechada"
+              },
+              {
+                "arquivo": "trator-A-2.jpeg"
+              },
+              {
+                "arquivo": "trator-A-3.jpeg"
+              },
+              {
+                "arquivo": "trator-A-4.jpeg"
+              },
+              {
+                "arquivo": "trator-A-5.jpeg"
+              },
+              {
+                "arquivo": "trator-A-6.jpeg"
+              },
+              {
+                "arquivo": "trator-A-7.jpeg"
+              },
+              {
+                "arquivo": "trator-A-8.jpeg"
+              },
+                {
+                    "arquivo": "trator-A-9.jpeg"
+                },
+                {
+                    "arquivo": "trator-A-10.jpeg"
+                }
+              
+            ],
+            "tags": [
+              "retroescavadeira",
+              "CASE 580N",
+              "trator CASE",
+              "máquina pesada",
+              "escavação",
+              "construção civil",
+              "pá carregadeira",
+              "retro diesel",
+              "máquina CASE"
+            ]
+          },
+          {
+            "tipo": "Van",
+            "fabricante": "Mercedes-Benz",
+            "modelo": "Sprinter",
+            "cor": "Branca",
+            "ano": null,
+            "uso": "Transporte de passageiros ou carga",
+            "combustivel": "Diesel",
+            "numero_de_rodas": 4,
+            "placa": "OJN9D13",
+            "detalhes_visuais": [
+              "Frente arredondada",
+              "Grade preta com símbolo cromado da Mercedes-Benz",
+              "Faróis grandes em formato gota",
+              "Parachoque preto fosco"
+            ],
+            "imagens": [
+              {
+                "arquivo": "van-A-1.jpeg",
+                "angulo": "Frontal",
+                "descricao": "Van Mercedes-Benz Sprinter branca vista de frente com destaque para o símbolo da marca e placa visível"
+              },
+              {
+                "arquivo": "van-A-2.jpeg"
+              },
+              {
+                "arquivo": "van-A-3.jpeg"
+              },
+              {
+                "arquivo": "van-A-4.jpeg"
+              },
+              {
+                "arquivo": "van-A-5.jpeg"
+              }
+            ],
+            "tags": [
+              "van Mercedes",
+              "Sprinter",
+              "Mercedes-Benz Sprinter",
+              "transporte de passageiros",
+              "van branca",
+              "placa OJN9D13",
+              "veículo utilitário",
+              "Mercedes diesel"
+            ]
+          },
+          {
+            "id": "van-B",
+            "tipo": "Ambulância",
+            "fabricante": "Fiat",
+            "modelo": "Ducato Maxi",
+            "cor": "Branco e azul claro com plotagem temática",
+            "ano": null,
+            "uso": "Unidade de Saúde Móvel",
+            "combustivel": "Diesel",
+            "numero_de_rodas": 4,
+            "placa": null,
+            "detalhes_visuais": [
+              "Adesivada com imagens gráficas e logos do Governo do Estado do Ceará",
+              "Símbolo da cruz vermelha e palavra 'AMBULÂNCIA' invertida no capô",
+              "Ar-condicionado externo na traseira (marca LG)",
+              "Faróis duplos retangulares",
+              "Parachoques pretos",
+              "Laterais com janelas largas",
+              "Portas traseiras com adesivagem e refrigeração acoplada"
+            ],
+            "fotos": [
+              "van-B-1.jpeg",
+              "van-B-2.jpeg",
+              "van-B-3.jpeg"
+            ]
+          }
+          
+       
+    ]
+  }
