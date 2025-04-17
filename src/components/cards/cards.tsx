@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CardPersonagem.module.css';
+import styles from './CardVeiculo.module.css';
 
 interface Veiculo {
   tipo: string;
@@ -13,30 +13,33 @@ interface Veiculo {
 
 interface Imagem {
   arquivo: string;
-  angulo: string;
-  descricao: string;
+  angulo?: string;
+  descricao?: string;
 }
 
 interface CardVeiculoProps {
   veiculo?: Veiculo;
   imagem?: Imagem;
+  onClick?: () => void;
 }
 
-export const CardVeiculo: React.FC<CardVeiculoProps> = ({ veiculo, imagem }) => {
-  if (!veiculo || !imagem) return null; // <- 🔒 proteção contra undefined
+export const CardVeiculo: React.FC<CardVeiculoProps> = ({ veiculo, imagem, onClick }) => {
+  if (!veiculo || !imagem) return null;
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       <img
         className={styles.foto}
         src={`/images/${imagem.arquivo}`}
-        alt={imagem.descricao}
+        alt={imagem.descricao || 'Imagem do veículo'}
       />
-      <h2>{veiculo.fabricante} - {veiculo.modelo}</h2>
-      <p><strong>Tipo:</strong> {veiculo.tipo}</p>
-      <p><strong>Carroceria:</strong> {veiculo.carroceria}</p>
-      <p><strong>Uso:</strong> {veiculo.uso}</p>
-      <p><strong>Combustível:</strong> {veiculo.combustivel}</p>
+      <div className={styles.overlay}>
+        <h2>{veiculo.fabricante} - {veiculo.modelo}</h2>
+        <p><strong>Tipo:</strong> {veiculo.tipo}</p>
+        <p><strong>Carroceria:</strong> {veiculo.carroceria}</p>
+        <p><strong>Uso:</strong> {veiculo.uso}</p>
+        <p><strong>Combustível:</strong> {veiculo.combustivel}</p>
+      </div>
     </div>
   );
 };

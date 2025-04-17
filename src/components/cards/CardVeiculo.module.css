@@ -1,0 +1,39 @@
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border:2PX solid var(--white) ;
+  box-shadow: 0 0 20px var(--shadow-glow);
+}
+
+.foto {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Overlay com as infos */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(12, 12, 27, 0.9);
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .overlay {
+  transform: translateY(0);
+}

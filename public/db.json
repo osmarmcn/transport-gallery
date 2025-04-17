@@ -62,6 +62,8 @@
           }
         ],
         "tags": [
+          "caminhao",
+          "caminhão",
           "caminhão Mercedes",
           "Mercedes-Benz 710",
           "Mercedes vermelho",
@@ -112,6 +114,8 @@
           }
         ],
         "tags": [
+          "caminhao",
+          "caminhão",
           "caminhão Mercedes",
           "Mercedes-Benz L-Series",
           "caminhão branco",
@@ -125,7 +129,7 @@
       {
         "veiculo": {
           "tipo": "Caminhão",
-          "fabricante": "Não identificado",
+          "fabricante": "Mercedes-Benz",
           "modelo": "Caminhão-tanque",
           "cor": "Vermelho",
           "ano": null,
@@ -165,6 +169,8 @@
           }
         ],
         "tags": [
+          "caminhao",
+          "caminhão",
           "caminhão-tanque",
           "caminhão pipa",
           "tanque vermelho",
@@ -209,6 +215,8 @@
                 }
             ],
                 "tags": [
+                    "caminhao",
+                    "caminhão",
                     "caminhão Mercedes",
                     "Accelo",
                     "Mercedes-Benz azul",
@@ -218,8 +226,8 @@
                     "caminhão leve"
                 ]
                
-        },
-        {
+      },
+      {
           "veiculo": {
             
                 "tipo": "Caminhão",
@@ -240,13 +248,15 @@
                 ]
               },
 
-              "imagens": [
+          "imagens": [
                 {
                     "arquivo": "caminhao-E-1.jpeg"
                 }
                
               ],
-                "tags": [
+          "tags": [
+                    "caminhao",
+                    "caminhão",
                     "caminhão Volkswagen",
                     "Worker",
                     "caminhão de lixo",
@@ -256,7 +266,7 @@
                     "caminhão de coleta",
                     "caminhão de resíduos"
                 ]
-        },
+      },
       {
         "veiculo": {
           "tipo": "Ônibus",
@@ -329,6 +339,7 @@
           }
         ],
         "tags": [
+          "onibus",
           "ônibus urbano",
           "Marcopolo Torino",
           "ônibus turquesa",
@@ -393,70 +404,24 @@
             {
                 "arquivo": "onibus-B-9.jpeg"
             }
+        ],
+        "tags": [
+            "onibus",
+            "ônibus urbano",
+            "transporte coletivo",
+            "ônibus de linha",
+            "ônibus acessível",
+            "ônibus diesel",
+            "bancos amarelos"
         ]
-        },
-        {
-        "veiculo": {
-          "tipo": "Ônibus",
-          "fabricante": "Marcopolo",
-          "modelo": "Torino",
-          "cor": "Vermelho e branco",
-          "ano": null,
-          "carroceria": "Urbano",
-          "quantidade_de_portas": 2,
-          "quantidade_de_eixos": 2,
-          "numero_de_rodas": 6,
-          "uso": "Transporte coletivo urbano",
-          "combustivel": "Diesel",
-          "tachografo": true,
-          "placa": "HJF-4518",
-          "detalhes_visuais": [
-            "Frente em formato arredondado",
-            "Faróis triplos em cada lado",
-            "Painel digital de itinerário na parte superior do para-brisa",
-            "Símbolo de acessibilidade para cadeirantes no para-brisa",
-            "Logo circular na grade dianteira",
-            "Cor predominante turquesa com faixa branca",
-            "Limpadores de para-brisa visíveis",
-            "Bancos amarelos em plástico rígido"
-          ]
-        },
-        "imagens": [
-            {
-                "arquivo": "onibus-B-1.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-2.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-3.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-4.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-5.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-6.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-7.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-8.jpeg"
-            },
-            {
-                "arquivo": "onibus-B-9.jpeg"
-            }
-        ]
-        },
-        {
+      },
+       
+      {
             "veiculo": {
                 "tipo": "Ônibus",
                 "fabricante": "Marcopolo",
                 "modelo": "Torino",
-                "cor": "Vermelho e branco",
+                "cor": " branco",
                 "ano": null,
                 "carroceria": "Urbano",
                 "quantidade_de_portas": 2,
@@ -465,7 +430,7 @@
                 "uso": "Transporte coletivo urbano",
                 "combustivel": "Diesel",
                 "tachografo": true,
-                "placa": "HJF-4518",
+                "placa": "NVA5E05",
                 "detalhes_visuais": [
                   "Frente em formato arredondado",
                   "Faróis triplos em cada lado",
@@ -486,10 +451,26 @@
                 },
                 {
                     "arquivo": "onibus-C-3.jpeg"
+                },
+                {
+                    "arquivo": "onibus-C-4.jpeg"
+                },
+                {
+                    "arquivo": "onibus-C-5.jpeg"
                 }
+              
+            ],
+            "tags": [
+                "onibus",
+                "ônibus urbano",
+                "transporte coletivo",
+                "ônibus de linha",
+                "ônibus acessível",
+                "ônibus diesel"
+                
             ]
-        },
-        {
+      },
+      {
             "veiculo": {
                 "tipo": "Ônibus",
                 "fabricante": "Marcopolo",
@@ -516,25 +497,37 @@
                 {
                     "arquivo": "onibus-D-1.jpeg"
                 }
-            ]
-        },
-        {
-            "tipo": "Retroescavadeira",
-            "fabricante": "CASE",
-            "modelo": "580N",
-            "cor": "Amarelo e Preto",
-            "ano": null,
-            "uso": "Terraplenagem, construção civil, escavação",
-            "combustivel": "Diesel",
-            "cabine_fechada": true,
-            "numero_de_rodas": 4,
-            "detalhes_visuais": [
-              "Pá carregadeira frontal",
-              "Braço de escavação traseiro (não visível na imagem)",
-              "Cabine envidraçada",
-              "Luzes de advertência no teto",
-              "Pintura amarela com marca CASE em branco"
             ],
+            "tags": [
+                "onibus",
+                "ônibus",
+                "ônibus urbano",
+                "transporte coletivo",
+                "ônibus de linha",
+                "ônibus acessível",
+                "ônibus diesel",
+                "placa NSQ-9323"
+            ]
+      },
+      {
+          "veiculo": {
+              "tipo": "Retroescavadeira",
+              "fabricante": "CASE",
+              "modelo": "580N",
+              "cor": "Amarelo e Preto",
+              "ano": null,
+              "uso": "Terraplenagem, construção civil, escavação",
+              "combustivel": "Diesel",
+              "cabine_fechada": true,
+              "numero_de_rodas": 4,
+              "detalhes_visuais": [
+                "Pá carregadeira frontal",
+                "Braço de escavação traseiro (não visível na imagem)",
+                "Cabine envidraçada",
+                "Luzes de advertência no teto",
+                "Pintura amarela com marca CASE em branco"
+              ]
+          },
             "imagens": [
               {
                 "arquivo": "trator-A-1.jpeg",
@@ -581,23 +574,25 @@
               "retro diesel",
               "máquina CASE"
             ]
+      },
+      {
+          "veiculo": {
+              "tipo": "Van",
+              "fabricante": "Mercedes-Benz",
+              "modelo": "Sprinter",
+              "cor": "Branca",
+              "ano": null,
+              "uso": "Transporte de passageiros ou carga",
+              "combustivel": "Diesel",
+              "numero_de_rodas": 4,
+              "placa": "OJN9D13",
+              "detalhes_visuais": [
+                "Frente arredondada",
+                "Grade preta com símbolo cromado da Mercedes-Benz",
+                "Faróis grandes em formato gota",
+                "Parachoque preto fosco"
+              ]
           },
-          {
-            "tipo": "Van",
-            "fabricante": "Mercedes-Benz",
-            "modelo": "Sprinter",
-            "cor": "Branca",
-            "ano": null,
-            "uso": "Transporte de passageiros ou carga",
-            "combustivel": "Diesel",
-            "numero_de_rodas": 4,
-            "placa": "OJN9D13",
-            "detalhes_visuais": [
-              "Frente arredondada",
-              "Grade preta com símbolo cromado da Mercedes-Benz",
-              "Faróis grandes em formato gota",
-              "Parachoque preto fosco"
-            ],
             "imagens": [
               {
                 "arquivo": "van-A-1.jpeg",
@@ -618,6 +613,7 @@
               }
             ],
             "tags": [
+              "van",
               "van Mercedes",
               "Sprinter",
               "Mercedes-Benz Sprinter",
@@ -627,33 +623,56 @@
               "veículo utilitário",
               "Mercedes diesel"
             ]
-          },
-          {
-            "id": "van-B",
-            "tipo": "Ambulância",
-            "fabricante": "Fiat",
-            "modelo": "Ducato Maxi",
-            "cor": "Branco e azul claro com plotagem temática",
-            "ano": null,
-            "uso": "Unidade de Saúde Móvel",
-            "combustivel": "Diesel",
-            "numero_de_rodas": 4,
-            "placa": null,
-            "detalhes_visuais": [
-              "Adesivada com imagens gráficas e logos do Governo do Estado do Ceará",
-              "Símbolo da cruz vermelha e palavra 'AMBULÂNCIA' invertida no capô",
-              "Ar-condicionado externo na traseira (marca LG)",
-              "Faróis duplos retangulares",
-              "Parachoques pretos",
-              "Laterais com janelas largas",
-              "Portas traseiras com adesivagem e refrigeração acoplada"
+      },
+      {
+        "veiculo": {
+              "id": "van-B",
+              "tipo": "Ambulância",
+              "fabricante": "Fiat",
+              "modelo": "Ducato Maxi",
+              "cor": "Branco e azul claro com plotagem temática",
+              "ano": null,
+              "uso": "Unidade de Saúde Móvel",
+              "combustivel": "Diesel",
+              "numero_de_rodas": 4,
+              "placa": null,
+              "detalhes_visuais": [
+                "Adesivada com imagens gráficas e logos do Governo do Estado do Ceará",
+                "Símbolo da cruz vermelha e palavra 'AMBULÂNCIA' invertida no capô",
+                "Ar-condicionado externo na traseira (marca LG)",
+                "Faróis duplos retangulares",
+                "Parachoques pretos",
+                "Laterais com janelas largas",
+                "Portas traseiras com adesivagem e refrigeração acoplada"
+              ]
+        },
+            "imagens": [
+              {
+                "arquivo": "van-B-1.jpeg"
+               
+              },
+              {
+                "arquivo": "van-B-2.jpeg"
+               
+              },
+              {
+                "arquivo": "van-B-3.jpeg"
+                
+              }
+             
             ],
-            "fotos": [
-              "van-B-1.jpeg",
-              "van-B-2.jpeg",
-              "van-B-3.jpeg"
+            "tags": [
+              "van",
+              "ambulância",
+              "Fiat Ducato",
+              "Ducato Maxi",
+              "ambulância adesivada",
+              "veículo de saúde",
+              "transporte de pacientes",
+              "Fiat diesel",
+              "unidade móvel de saúde"
             ]
-          }
+      }
           
        
     ]

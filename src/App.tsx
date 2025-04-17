@@ -1,66 +1,103 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 import './theme/global.css';
 import { Header } from "./components/header/header";
 import { CardVeiculo } from "./components/cards/cards";
+import { GaleriaModal } from "./components/modal/GaleriaModal"; // certifique-se que esse caminho está certo
 
 interface Veiculo {
   tipo: string;
   fabricante: string;
   modelo: string;
   cor: string;
-  carroceria: string;
   uso: string;
+  carroceria: string;
   combustivel: string;
 }
 
 interface Imagem {
   arquivo: string;
-  angulo: string;
-  descricao: string;
+  angulo?: string;
+  descricao?: string;
 }
 
-interface VeiculoCompleto {
-  veiculo: Veiculo;
-  imagens: Imagem[];
+interface VeiculoData {
+  veiculo?: Veiculo;
+  imagens?: Imagem[];
+  tags?: string[];
 }
 
 function App() {
-  const [veiculos, setVeiculos] = useState<VeiculoCompleto[]>([]);
+  const [veiculos, setVeiculos] = useState<VeiculoData[]>([]);
+  const [veiculosFiltrados, setVeiculosFiltrados] = useState<VeiculoData[]>([]);
+  const [selectedImages, setSelectedImages] = useState<Imagem[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    async function carregarDados() {
+    async function carregarVeiculos() {
       try {
         const { data } = await axios.get("/db.json");
-        setVeiculos(data.veiculos);
+        setVeiculos(data.veiculos || []);
+        setVeiculosFiltrados(data.veiculos || []);
       } catch (error) {
         console.error("Erro ao carregar db.json:", error);
       }
     }
 
-    carregarDados();
+    carregarVeiculos();
   }, []);
+
+  function handleSearch(value: string) {
+    if (!value) {
+      setVeiculosFiltrados(veiculos);
+      return;
+    }
+
+    const termo = value.toLowerCase();
+
+    const filtrados = veiculos.filter(v =>
+      v.tags?.some(tag => tag.toLowerCase().includes(termo))
+    );
+
+    setVeiculosFiltrados(filtrados);
+  }
+
+  function openModal(imagens: Imagem[]) {
+    setSelectedImages(imagens);
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+    setSelectedImages([]);
+  }
 
   return (
     <>
-      <Header onSearch={() => {}} />
-      <section className="container">
-      {veiculos.length > 0 ? (
-        veiculos
-          .filter((item) => Array.isArray(item.imagens) && item.imagens.length > 0)
-          .map((item, index) => (
-            <CardVeiculo
-              key={index}
-              veiculo={item.veiculo}
-              imagem={item.imagens[0]}
-            />
-          ))
-      ) : (
-        <p>Nenhum veículo encontrado.</p>
-      )}
+      <Header onSearch={handleSearch} />
 
+      <section className="container">
+        {veiculosFiltrados.length > 0 ? (
+          veiculosFiltrados
+            .filter(v => v.veiculo && v.imagens && v.imagens.length > 0)
+            .map((v, i) => (
+              <CardVeiculo
+                key={i}
+                veiculo={v.veiculo}
+                imagem={v.imagens![0]}
+                onClick={() => openModal(v.imagens!)}
+              />
+            ))
+        ) : (
+          <p style={{ color: 'white', padding: '2rem', textAlign: 'center' }}>
+            Nenhum veículo encontrado com esse termo.
+          </p>
+        )}
       </section>
+
+      {isModalOpen && (
+        <GaleriaModal imagens={selectedImages} onClose={closeModal} />
+      )}
     </>
   );
 }
